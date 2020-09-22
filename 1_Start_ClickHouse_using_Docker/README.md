@@ -70,14 +70,14 @@ http://localhost:8080/
 
 
 
-## 3. ClickHouse Client 실행
+## 3. ClickHouse Client 실행 (작성 중.. . )
 * [ClickHouse Client Docker Image](https://hub.docker.com/r/yandex/clickhouse-client)
 * [docker network connect](https://docs.docker.com/engine/reference/commandline/network_connect/)
 * [Docker 컨테이너 내부에서 머신의 로컬 호스트에 어떻게 연결합니까?](https://c10106.tistory.com/2436)
 * [docker container 연결해서 쓰기](https://hoony-gunputer.tistory.com/entry/docker-container-%EC%97%B0%EA%B2%B0%ED%95%B4%EC%84%9C-%EC%93%B0%EA%B8%B0)
-* [](https://stackoverflow.com/questions/57349021/how-to-access-docker-container-with-clickhouse-in-windows-for-loading-data)
+* [clickhouse stackoverflow](https://stackoverflow.com/questions/57349021/how-to-access-docker-container-with-clickhouse-in-windows-for-loading-data)
 * [github clickhouse setup](https://github.com/jneo8/clickhouse-setup)
-* [](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter06/02)
+* [about docker link](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter06/02)
 
 ### ClickHouse Client 도커 이미지 다운로드
 ```bash
