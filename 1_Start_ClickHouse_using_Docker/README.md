@@ -1,8 +1,11 @@
 # 도커 서비스로 클릭하우스 데이터 베이스 시작하기
 
-내가 사용할 수 있는 데이터베이스를 구축한다는 것은 비전공자인 나에게는 매우 어려운 일이었다. 따라서 회사에 입사하기 전에는 데이터베이스도 생소했고, SQL Query를 실제로 쓸 일이 거의 없었다. 
+자신만의 데이터베이스를 구축한다는 것은 개발자 혹은 컴퓨터를 잘 아는 경우가 아닌 사람들에게는 매우 어려운 일일 것이다. 
+이러한 이유에서 데이터베이스가 구축된 회사에 들어가기 전에 SQL 쿼리를 사용해볼 수 있는 기회는 거의 없지 않을까 생각된다.  
 
-회사에서는 도커를 사용하고 있었는데.. 도커를 사용하면 보다 간단하게 SQL를 사용할 수 있는 환경을 구축할 수 있다. 
+데이터베이스와 쿼리에 대한 공부를 시작하고 싶은 사람들에게 도움이되면 좋겠다.  
+
+도커를 사용해서 간단하게 데이터베이스를 사용할 수 있는 환경을 구축할 수 있다. 
 
 ## 1. Clickhouse-Server
 * [ClickHouse Server Docker Image](https://hub.docker.com/r/yandex/clickhouse-server/)
@@ -66,6 +69,31 @@ http://localhost:8080/
 ![](./img/2020-07-03-01-43-19.png)
 
 
+
+## 3. ClickHouse Client 실행
+* [ClickHouse Client Docker Image](https://hub.docker.com/r/yandex/clickhouse-client)
+* [docker network connect](https://docs.docker.com/engine/reference/commandline/network_connect/)
+* [Docker 컨테이너 내부에서 머신의 로컬 호스트에 어떻게 연결합니까?](https://c10106.tistory.com/2436)
+* [docker container 연결해서 쓰기](https://hoony-gunputer.tistory.com/entry/docker-container-%EC%97%B0%EA%B2%B0%ED%95%B4%EC%84%9C-%EC%93%B0%EA%B8%B0)
+* [](https://stackoverflow.com/questions/57349021/how-to-access-docker-container-with-clickhouse-in-windows-for-loading-data)
+* [github clickhouse setup](https://github.com/jneo8/clickhouse-setup)
+* [](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter06/02)
+
+### ClickHouse Client 도커 이미지 다운로드
+```bash
+$ docker pull yandex/clickhouse-client
+```
+
+```bash
+$ docker network create database_network
+```
+
+### ClickHouse Client 이미지 사용 방법
+
+
+
+
+----------------
 ```
 # https://www.quora.com/What-is-the-difference-between-SQL-and-a-query#:~:text=SQL%20%3A%20Structured%20Query%20Language%20(SQL,of%20rows%20from%20data%20base.
 SQL : Structured Query Language (SQL) is a standard computer Programming language for relational database management and data manipulation.
@@ -74,15 +102,6 @@ SQL is used to query, insert, update and modify data.
 
 Query : A query is a single SQL statement that does Select, Update, Insert or Delete of rows from data base.
 ```
-
-
-
-
-
-
-
-
-
 
 
 
